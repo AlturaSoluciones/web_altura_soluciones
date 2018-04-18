@@ -3,4 +3,111 @@
     %td
       = image_tag("ajax-document-loader.gif", alt: "Loading..")
 
-%h1 Hello World
+/ Menu
+.menu-wrapper.center-relative
+  %nav#header-main-menu
+    .mob-menu MENU
+    %ul.main-menu.sm.sm-clean
+      %li
+        %a{:href => "#home"} Home
+      %li
+        %a{:href => "#services"} Services
+      %li
+        %a{:href => "#portfolio"} Portfolio
+      %li
+        %a{:href => "#about"} About
+      %li
+        %a{:href => "#news"} News
+      %li
+        %a{:href => "#video"} Video
+      %li
+        %a{:href => "#skills"} Skills
+      %li
+        %a{:href => "#contact"} Contact
+
+/ Home
+#home.section.intro-page
+  .block.content-1170.center-relative.center-text
+    = image_tag("demo-images/logo.png", class: "top-logo", alt: "Altura Soluciones")
+    %br
+    %h1.big-title
+      Altura Soluciones
+      %span Aiming to new heights
+    %p.title-desc Creating incredible tech solutions with React.js and React Native
+
+/ Stack
+#services.section
+  .block.content-1170.center-relative
+    .section-title-holder.left
+      .section-num
+        %span 01
+      %h2.entry-title Stack
+    .section-content-holder.right
+      .content-wrapper
+        :javascript
+          var slider1_speed = "500";
+          var slider1_auto = "false";
+          var slider1_hover = "true";
+        .image-slider-wrapper.relative.service.slider1
+          %a#slider1_next.image_slider_next{:href => "#"}
+          %ul#slider1.image-slider.slides
+            %li
+              .service-holder
+                = image_tag("demo-images/icon_01.png", alt: "")
+                .service-content-holder
+                  .service-title REACT
+                  .service-content
+                    Donecos arem ipsum sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.
+                    %br/
+              .service-holder
+                = image_tag("demo-images/icon_02.png", alt: "")
+                .service-content-holder
+                  .service-title REACT NATIVE
+                  .service-content
+                    Disum lorem sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.
+                    %br/
+              .service-holder
+                = image_tag("demo-images/icon_03.png", alt: "")
+                .service-content-holder
+                  .service-title REDUX
+                  .service-content
+                    Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod.
+                    %br/
+              .service-holder
+                = image_tag("demo-images/icon_04.png", alt: "")
+                .service-content-holder
+                  .service-title JEST
+                  .service-content
+                    Cadipisicing elit sed eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet.
+                    %br/
+            %li
+              .service-holder
+                = image_tag("demo-images/icon_03.png", alt: "")
+                .service-content-holder
+                  .service-title RAILS
+                  .service-content
+                    Donecos arem ipsum sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.
+                    %br/
+              .service-holder
+                = image_tag("demo-images/icon_04.png", alt: "")
+                .service-content-holder
+                  .service-title DEVOPS
+                  .service-content
+                    Disum lorem sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.
+                    %br/
+              .service-holder
+                = image_tag("demo-images/icon_02.png", alt: "")
+                .service-content-holder
+                  .service-title LEAN
+                  .service-content
+                    Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod.
+                    %br/
+              .service-holder
+                = image_tag("demo-images/icon_01.png", alt: "")
+                .service-content-holder
+                  .service-title FULLSTACK
+                  .service-content
+                    Cadipisicing elit sed eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet.
+                    %br/
+          .clear
+    .clear

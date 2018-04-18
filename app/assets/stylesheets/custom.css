@@ -2,3 +2,15 @@
     font-size: 0.6em;
     font-style: italic;
 }
+
+#testimonials .section-title-holder {
+    background-color: rgb(255, 186, 66);
+}
+
+#slider1_text {
+    color: #fff;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    font-size: 1em;
+}

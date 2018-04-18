@@ -11,16 +11,16 @@
       %li
         %a{:href => "#home"} Home
       %li
-        %a{:href => "#services"} Services
+        %a{:href => "#services"} Stack
       %li
         %a{:href => "#portfolio"} Portfolio
       %li
-        %a{:href => "#about"} About
+        %a{:href => "#about"} Motivation
       %li
-        %a{:href => "#news"} News
-      %li
+        %a{:href => "#news"} Stories
+      -#%li
         %a{:href => "#video"} Video
-      %li
+      -#%li
         %a{:href => "#skills"} Skills
       %li
         %a{:href => "#contact"} Contact
@@ -50,6 +50,7 @@
           var slider1_hover = "true";
         .image-slider-wrapper.relative.service.slider1
           %a#slider1_next.image_slider_next{:href => "#"}
+            %span#slider1_text More
           %ul#slider1.image-slider.slides
             %li
               .service-holder
@@ -105,7 +106,7 @@
               .service-holder
                 = image_tag("demo-images/icon_01.png", alt: "")
                 .service-content-holder
-                  .service-title FULLSTACK
+                  .service-title TDD
                   .service-content
                     Cadipisicing elit sed eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet.
                     %br/
@@ -170,3 +171,251 @@
     .clear
   .clear
 
+/ About
+#about.section
+  .block.content-1170.center-relative
+    .section-title-holder.left
+      .section-num
+        %span 03
+      %h2.entry-title MOTIVATION
+    .section-content-holder.right
+      .content-wrapper
+        .content-title-holder
+          %p.content-title WHY?
+        .one_half
+          Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum
+          %strong dolor sit amet
+          consectetur est adipisicing elit, sed do eiusmod tempor
+        .one_half.last
+          %span{:style => "color: #e54b76;"}
+            %strong 2001-2003 ·
+          %span{:style => "color:#727190;"}
+            %em Art Studio Lorem Donec
+          %br/
+          %span{:style => "color: #e54b76;"}
+            %strong 2003-2006 ·
+          %span{:style => "color:#727190;"}
+            %em Per Set Web Site
+          %br/
+          %span{:style => "color: #e54b76;"}
+            %strong 2006-2010 ·
+          %span{:style => "color:#727190;"}
+            %em Setera Donec EstNunc
+          %br/
+          %span{:style => "color: #e54b76;"}
+            %strong 2010-2013 ·
+          %span{:style => "color:#727190;"}
+            %em Studio Labore Tempor
+          %br/
+          %span{:style => "color: #e54b76;"}
+            %strong 2013-2016 ·
+          %span{:style => "color:#727190;"}
+            %em Magna Ipsum Amet
+          %br/
+        .clear
+        %br/
+        %br/
+      .full-width
+        :javascript
+          var aboutImage_speed = "500";
+          var aboutImage_auto = "false";
+          var aboutImage_hover = "true";
+        .image-slider-wrapper.relative.img.aboutImage
+          %a#aboutImage_next.image_slider_next{:href => "#"}
+          .caroufredsel_wrapper
+            %ul#aboutImage.image-slider.slides
+              %li
+                = image_tag("demo-images/about_img_04.jpg", alt: "")
+              %li
+                = image_tag("demo-images/about_img_05.jpg", alt: "")
+              %li
+                = image_tag("demo-images/about_img_06.jpg", alt: "")
+          .clear
+        :javascript
+          var team1_speed = "500";
+          var team1_auto = "false";
+          var team1_hover = "true";
+        .image-slider-wrapper.relative.team.team1
+          %a#team1_next.image_slider_next{:href => "#"}
+          .caroufredsel_wrapper
+            %ul#team1.image-slider.slides
+              %li
+                .member-content-holder
+                  %h4.member-name Robert Williams
+                  %p.member-position LEAD DESIGNER
+                  .member-content
+                    Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.
+                    %br/
+                .member-image-holder
+                  = image_tag("demo-images/about_img_01.jpg", alt: "")
+                .clear
+              %li
+                .member-content-holder
+                  %h4.member-name John Doe
+                  %p.member-position SEO MASTER
+                  .member-content
+                    Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.
+                    %br/
+                .member-image-holder
+                  = image_tag("demo-images/about_img_02.jpg", alt: "")
+                .clear
+              %li
+                .member-content-holder
+                  %h4.member-name John Doe
+                  %p.member-position PSD GURU
+                  .member-content
+                    Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.
+                    %br/
+                .member-image-holder
+                  = image_tag("demo-images/about_img_03.jpg", alt: "")
+                .clear
+          .clear
+      / end full-width div
+    .clear
+
+/ News
+#news.section
+  .block.content-1170.center-relative
+    .section-title-holder.right
+      .section-num
+        %span
+          04
+      %h2.entry-title STORIES
+    .section-content-holder.left
+      .content-wrapper
+        .blog-holder.block.center-relative
+          %article.relative.blog-item-holder.center-relative
+            .num 01
+            .info
+              .author.vcard Robert Williams
+              .cat-links
+                %ul
+                  %li
+                    %a{:href => "#"} BRANDING
+            %h3.entry-title
+              %a{:href => "#"} Eiusmod tempor incididunt ut dolore magna labore eiusmod ipsum dolor
+            .clear
+          %article.relative.blog-item-holder.center-relative
+            .num 02
+            .info
+              .author.vcard Jim Davis
+              .cat-links
+                %ul
+                  %li
+                    %a{:href => "#"} TECH
+            %h3.entry-title
+              %a{:href => "#"} Incididunt ut dolore magna labore eiusmod lorem ipsum dolor sit
+            .clear
+          %article.relative.blog-item-holder.center-relative
+            .num 03
+            .info
+              .author.vcard Ann Peterson
+              .cat-links
+                %ul
+                  %li
+                    %a{:href => "#"} CRAFTING
+            %h3.entry-title
+              %a{:href => "#"} Labore eiusmod lorem ipsum dolor sit amet nunc labore incididunt ut dolore
+            .clear
+          %article.relative.blog-item-holder.center-relative
+            .num 04
+            .info
+              .author.vcard Robert Williams
+              .cat-links
+                %ul
+                  %li
+                    %a{:href => "#"} CRAFTING
+            %h3.entry-title
+              %a{:href => "#"} Dolor sit amet nunc labore incididunt ut dolore magna labore eiusmod
+            .clear
+          .latest-post-bottom-text
+            %a{:href => "#"} GO TO BLOG
+    .clear
+  .block.content-1170.center-relative
+    .extra-content-left
+      %h2.entry-title
+        TESTIMONIALS
+      :javascript
+        var text1_speed = "500";
+        var text1_auto = "false";
+        var text1_hover = "true";
+      .text1.testimonial-slider-holder.slider-holder
+        .caroufredsel_wrapper
+          %ul#text1.slides.testimonial
+            %li
+              .testimonial-content
+                %p.testimonial-text The difference between a Designer and Developer, when it comes to design skills, is the difference between shooting a bullet and throwing it.
+                %p.testimonial-author SCOTT HANSELMAN
+              .clear
+            %li{:style => "width: 500px;"}
+              .testimonial-content
+                %p.testimonial-text To create anything–whether a short story or a magazine profile or a film or a sitcom–is to believe, if only momentarily, you are capable of magic.
+                %p.testimonial-author TOM BISSEL
+              .clear
+            %li
+              .testimonial-content
+                %p.testimonial-text As a profession, graphic designers have been shamefully remiss or ineffective about plying their craft for social or political betterment.
+                %p.testimonial-author STEVEN HELLER
+              .clear
+        %a#text1_next.carousel_text_next{:href => "#"}
+        .clear
+
+-# TODO Video Section
+-# TODO Process Section
+-# TODO Expertise Section
+
+
+/ Contact
+#contact.section
+  .block.content-1170.center-relative
+    .section-title-holder.left
+      .section-num
+        %span
+          -# TODO Change back to 07 when adding the other sections
+          05
+      %h2.entry-title Contact
+    .section-content-holder.right
+      .content-wrapper
+        .one_half
+          %p Consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est adipisicing elit, sed do eiusmod tempor.
+          %br/
+          %p
+            %strong
+              %span{:style => "color: #e64b77;"} Incididunt ut dolore
+            magna labore eiusmod. Dolor sit amet consectetur est adipisicing elit, sed do eiusmod.
+        .one_half.last
+          .contact-form
+            %p
+              %input#name{:name => "your-name", :placeholder => "Name", :type => "text"}/
+            %p
+              %input#contact-email{:name => "your-email", :placeholder => "Email", :type => "email"}/
+            %p
+              %input#subject{:name => "your-subject", :placeholder => "Subject", :type => "text"}/
+            %p
+              %textarea#message{:name => "your-message", :placeholder => "Message"}
+            %p
+              %input{:onclick => "SendMail()", :type => "submit", :value => "SEND"}/
+        .clear
+      -# TODO Map or not?
+      .full-width
+        %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4274.290564544589!2d-75.2952832049782!3d40.753669641460846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1444506658649", :style => "border:0", :width => "600"}
+    .clear
+
+/ Footer
+%footer
+  .footer.content-1170.center-relative
+    %ul
+      %li.copyright-footer
+        © 2018 All rights reserved
+        %a{:href => "https://www.alturasoluciones.com", :target => "_blank"} | Altura Soluciones
+      %li.social-footer
+        %a{:href => "#"}
+          %span.fa.fa-twitter
+        %a{:href => "#"}
+          %span.fa.fa-behance
+        %a{:href => "#"}
+          %span.fa.fa-dribbble
+        %a{:href => "#"}
+          %span.fa.fa-facebook
+        %a{:href => "#"}
+          %span.fa.fa-rss

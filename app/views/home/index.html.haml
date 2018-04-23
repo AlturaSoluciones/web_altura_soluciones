@@ -54,61 +54,61 @@
           %ul#slider1.image-slider.slides
             %li
               .service-holder
-                = image_tag("demo-images/icon_01.png", alt: "")
+                = image_tag("react-icon.png", alt: "")
                 .service-content-holder
                   .service-title REACT
                   .service-content
-                    Donecos arem ipsum sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.
+                    Open-source JavaScript library used for building user interfaces specifically for single page applications. It allows us to create reusable UI components and large web applications which can change data, without reloading the page. React is fast, scalable, and simple.
                     %br/
               .service-holder
-                = image_tag("demo-images/icon_02.png", alt: "")
+                = image_tag("react-native-logo.png", alt: "")
                 .service-content-holder
                   .service-title REACT NATIVE
                   .service-content
-                    Disum lorem sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.
+                    React Native lets us build native mobile apps using only JavaScript. It uses the same design as React, letting us to compose a rich mobile UI from declarative components. Fast development cycle reloading changes on real time without need for recompiling.
                     %br/
               .service-holder
-                = image_tag("demo-images/icon_03.png", alt: "")
+                = image_tag("redux-logo.png", alt: "")
                 .service-content-holder
                   .service-title REDUX
                   .service-content
-                    Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod.
+                    Redux is a predictable state container for JavaScript apps. It helps us manage apps data and respond to user actions consistently, run in different environments (client, server, and native), and are easy to test.
                     %br/
               .service-holder
-                = image_tag("demo-images/icon_04.png", alt: "")
+                = image_tag("jest-icon.png", alt: "")
                 .service-content-holder
                   .service-title JEST
                   .service-content
-                    Cadipisicing elit sed eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet.
+                    De facto unit testing framework for ReactJS projects. Provides and integrated experience with easy setup working out of the box with React. Simplifies testing allowing to analyze how state data change over time.
                     %br/
             %li
               .service-holder
-                = image_tag("demo-images/icon_03.png", alt: "")
+                = image_tag("rails-logo.png", alt: "")
                 .service-content-holder
                   .service-title RAILS
                   .service-content
-                    Donecos arem ipsum sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.
+                    Fast, flexible and reliable framework to build MVC webapps and standard API backend solutions. Rails allow us to develop MVP (Minimum Viable Products) in a cost effective way fulfilling our clients needs in the shortest time possible.
                     %br/
               .service-holder
-                = image_tag("demo-images/icon_04.png", alt: "")
+                = image_tag("devops-logo.png", alt: "")
                 .service-content-holder
                   .service-title DEVOPS
                   .service-content
-                    Disum lorem sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut donecos dolore ipsum temporest.
+                    We use DevOps best practices to guarantee continuous software  and faster features delivery, faster resolution of problems, increase the productivity of our team, improve communication and collaboration and ensure the client engagement on the project.
                     %br/
               .service-holder
-                = image_tag("demo-images/icon_02.png", alt: "")
+                = image_tag("lean-logo.png", alt: "")
                 .service-content-holder
                   .service-title LEAN
                   .service-content
-                    Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod.
+                    "...leans means creating more value for customers with fewer resources." We understand customer values and focus our key processes to continuously increase it, satisfying it's needs and engaging the client as part of our development cycle.
                     %br/
               .service-holder
-                = image_tag("demo-images/icon_01.png", alt: "")
+                = image_tag("tdd-logo.png", alt: "")
                 .service-content-holder
                   .service-title TDD
                   .service-content
-                    Cadipisicing elit sed eiusmod tempor incididunt ut labore lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet.
+                    We validate our code with Test Driven Development, focusing on smaller chunks of functionality which guarantees that the new implemented code passes all tests keeping the base code stable despite of changes and decreasing bugs introduced.
                     %br/
           .clear
     .clear
@@ -284,52 +284,31 @@
     .section-content-holder.left
       .content-wrapper
         .blog-holder.block.center-relative
-          %article.relative.blog-item-holder.center-relative
-            .num 01
-            .info
-              .author.vcard Robert Williams
-              .cat-links
-                %ul
-                  %li
-                    %a{:href => "#"} BRANDING
-            %h3.entry-title
-              %a{:href => "#"} Eiusmod tempor incididunt ut dolore magna labore eiusmod ipsum dolor
-            .clear
-          %article.relative.blog-item-holder.center-relative
-            .num 02
-            .info
-              .author.vcard Jim Davis
-              .cat-links
-                %ul
-                  %li
-                    %a{:href => "#"} TECH
-            %h3.entry-title
-              %a{:href => "#"} Incididunt ut dolore magna labore eiusmod lorem ipsum dolor sit
-            .clear
-          %article.relative.blog-item-holder.center-relative
-            .num 03
-            .info
-              .author.vcard Ann Peterson
-              .cat-links
-                %ul
-                  %li
-                    %a{:href => "#"} CRAFTING
-            %h3.entry-title
-              %a{:href => "#"} Labore eiusmod lorem ipsum dolor sit amet nunc labore incididunt ut dolore
-            .clear
-          %article.relative.blog-item-holder.center-relative
-            .num 04
-            .info
-              .author.vcard Robert Williams
-              .cat-links
-                %ul
-                  %li
-                    %a{:href => "#"} CRAFTING
-            %h3.entry-title
-              %a{:href => "#"} Dolor sit amet nunc labore incididunt ut dolore magna labore eiusmod
-            .clear
+          - news.each_with_index do |article, index|
+            %article.relative.blog-item-holder.center-relative
+              .num
+                = "0#{index+1}"
+              .info
+                .author.vcard
+                  = article[:creator]
+              %h3.entry-title
+                %a{:href => article[:link], :target => "_blank"}
+                  = article[:title]
+                .clear
+
+          -#%article.relative.blog-item-holder.center-relative
+          -#  .num 01
+          -#  .info
+          -#    .author.vcard Robert Williams
+          -#    .cat-links
+          -#      %ul
+          -#        %li
+          -#          %a{:href => "#"} BRANDING
+          -#  %h3.entry-title
+          -#    %a{:href => "#"} Eiusmod tempor incididunt ut dolore magna labore eiusmod ipsum dolor
+          -#  .clear
           .latest-post-bottom-text
-            %a{:href => "#"} GO TO BLOG
+            %a{:href => "https://medium.com/alturasoluciones", target: "_blank"} GO TO BLOG
     .clear
   .block.content-1170.center-relative
     .extra-content-left

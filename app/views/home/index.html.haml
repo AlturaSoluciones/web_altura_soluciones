@@ -284,7 +284,7 @@
     .section-content-holder.left
       .content-wrapper
         .blog-holder.block.center-relative
-          - news.each_with_index do |article, index|
+          - medium_news.each_with_index do |article, index|
             %article.relative.blog-item-holder.center-relative
               .num
                 = "0#{index+1}"
@@ -292,7 +292,7 @@
                 .author.vcard
                   = article[:creator]
               %h3.entry-title
-                %a{:href => article[:link], :target => "_blank"}
+                %a{href: article[:link], target: "_blank"}
                   = article[:title]
                 .clear
 
@@ -308,7 +308,7 @@
           -#    %a{:href => "#"} Eiusmod tempor incididunt ut dolore magna labore eiusmod ipsum dolor
           -#  .clear
           .latest-post-bottom-text
-            %a{:href => "https://medium.com/alturasoluciones", target: "_blank"} GO TO BLOG
+            %a{href: "https://medium.com/alturasoluciones", target: "_blank"} GO TO BLOG
     .clear
   .block.content-1170.center-relative
     .extra-content-left

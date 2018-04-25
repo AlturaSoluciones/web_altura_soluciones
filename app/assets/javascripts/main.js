@@ -347,7 +347,7 @@ var SendMail = function () {
         };
         jQuery.ajax({
             type: "POST",
-            url: "php/sendMail.php",
+            url: "/send_email",
             data: params,
             success: function (response) {
                 if (response) {

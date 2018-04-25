@@ -183,35 +183,17 @@
         .content-title-holder
           %p.content-title WHY?
         .one_half
-          Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum
-          %strong dolor sit amet
-          consectetur est adipisicing elit, sed do eiusmod tempor
+          We are a passionate and innovative team that loves to develop new high quality products using modern technologies and
+          %strong help other to create value
+          through their ideas, projects or startups.
         .one_half.last
-          %span{:style => "color: #e54b76;"}
-            %strong 2001-2003 ·
-          %span{:style => "color:#727190;"}
-            %em Art Studio Lorem Donec
-          %br/
-          %span{:style => "color: #e54b76;"}
-            %strong 2003-2006 ·
-          %span{:style => "color:#727190;"}
-            %em Per Set Web Site
-          %br/
-          %span{:style => "color: #e54b76;"}
-            %strong 2006-2010 ·
-          %span{:style => "color:#727190;"}
-            %em Setera Donec EstNunc
-          %br/
-          %span{:style => "color: #e54b76;"}
-            %strong 2010-2013 ·
-          %span{:style => "color:#727190;"}
-            %em Studio Labore Tempor
-          %br/
-          %span{:style => "color: #e54b76;"}
-            %strong 2013-2016 ·
-          %span{:style => "color:#727190;"}
-            %em Magna Ipsum Amet
-          %br/
+          We specialize in building
+          %strong
+            web and mobile applications
+          that fit with the business needs, following
+          %strong
+            Lean principles and the best Agile practices
+            to add value to our clients.
         .clear
         %br/
         %br/
@@ -221,15 +203,15 @@
           var aboutImage_auto = "false";
           var aboutImage_hover = "true";
         .image-slider-wrapper.relative.img.aboutImage
-          %a#aboutImage_next.image_slider_next{:href => "#"}
+          -#%a#aboutImage_next.image_slider_next{:href => "#"}
           .caroufredsel_wrapper
             %ul#aboutImage.image-slider.slides
               %li
-                = image_tag("demo-images/about_img_04.jpg", alt: "")
-              %li
-                = image_tag("demo-images/about_img_05.jpg", alt: "")
-              %li
-                = image_tag("demo-images/about_img_06.jpg", alt: "")
+                = image_tag("collaboration_altura.png", alt: "")
+              -#%li
+              -#  = image_tag("demo-images/about_img_05.jpg", alt: "")
+              -#%li
+              -#  = image_tag("demo-images/about_img_06.jpg", alt: "")
           .clear
         :javascript
           var team1_speed = "500";
@@ -241,33 +223,35 @@
             %ul#team1.image-slider.slides
               %li
                 .member-content-holder
-                  %h4.member-name Robert Williams
-                  %p.member-position LEAD DESIGNER
+                  %h4.member-name David Meza
+                  %p.member-position CEO
                   .member-content
-                    Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.
+                    Creative thinker. Software Consultant and Expert on technological products development for bussinesses and startups.
+                    Specialist in remote software development and Agile/Lean methodologies. Gives help to startups with tools and processes to validate
+                    hypothesis and business models.
                     %br/
                 .member-image-holder
-                  = image_tag("demo-images/about_img_01.jpg", alt: "")
+                  = image_tag("profiles/david_meza.png", alt: "David Meza")
                 .clear
               %li
                 .member-content-holder
-                  %h4.member-name John Doe
-                  %p.member-position SEO MASTER
+                  %h4.member-name Gustavo González
+                  %p.member-position CTO
                   .member-content
-                    Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.
+                    25+ plus years in software development. Loves to learn new techonlogies and share it's knowledge with others.
                     %br/
                 .member-image-holder
-                  = image_tag("demo-images/about_img_02.jpg", alt: "")
+                  = image_tag("profiles/gustavo_gonzalez", alt: "Gustavo González")
                 .clear
               %li
                 .member-content-holder
-                  %h4.member-name John Doe
-                  %p.member-position PSD GURU
+                  %h4.member-name Stefany Meza
+                  %p.member-position Marketing and Management
                   .member-content
-                    Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.
+                    Business and international relations. Communication Development, Digital Marketing and Management.
                     %br/
                 .member-image-holder
-                  = image_tag("demo-images/about_img_03.jpg", alt: "")
+                  = image_tag("profiles/stefany_meza", alt: "Stefany Meza")
                 .clear
           .clear
       / end full-width div
@@ -323,18 +307,32 @@
           %ul#text1.slides.testimonial
             %li
               .testimonial-content
-                %p.testimonial-text The difference between a Designer and Developer, when it comes to design skills, is the difference between shooting a bullet and throwing it.
-                %p.testimonial-author SCOTT HANSELMAN
+                %p.testimonial-text
+                  Hiring Altura Soluciones was one of the best decisions that I made when starting my company. They help me to build a high quality
+                  product according to the highest development standards. Every great company should have partners as Altura Solucioens that help them to
+                  achieve success.
+                %p.testimonial-author
+                  DOUG PARENT - RingRx.com
+                  %br
+                  (Web Development, Mobile Development, DevOps)
               .clear
             %li{:style => "width: 500px;"}
               .testimonial-content
-                %p.testimonial-text To create anything–whether a short story or a magazine profile or a film or a sitcom–is to believe, if only momentarily, you are capable of magic.
-                %p.testimonial-author TOM BISSEL
+                %p.testimonial-text
+                  Holderness & Bourne is very pleased with Altura Soluciones' work. Our web site required a group of specific new features and fixes
+                  on the frontend that they handle with professionalism. The team was very receptive and helpful during the hole process. We are eager
+                  to collaborate together in the future.
+                %p.testimonial-author
+                  ALEX HOLDERNESS - Holderness & Bourne
               .clear
             %li
               .testimonial-content
-                %p.testimonial-text As a profession, graphic designers have been shamefully remiss or ineffective about plying their craft for social or political betterment.
-                %p.testimonial-author STEVEN HELLER
+                %p.testimonial-text
+                  We believe that the work of Altura Soluciones is being essential for FCR's organization performance. You give us instant feedback with
+                  very didactic and easy to follow instructions on how to use the systems and applications that you develop for us.
+                %p.testimonial-author
+                  BELEN PERDOMO - Cecilia Rivadeneira Fundation(FCR)
+                  %b Community Involvement
               .clear
         %a#text1_next.carousel_text_next{:href => "#"}
         .clear
@@ -356,28 +354,31 @@
     .section-content-holder.right
       .content-wrapper
         .one_half
-          %p Consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est adipisicing elit, sed do eiusmod tempor.
+          %p
+            We are passionate about collaborating on new and exciting project using modern techologies to guarantee a high quality product and to
+            provide value to our customers.
           %br/
           %p
+            If you want to collaborate,
             %strong
-              %span{:style => "color: #e64b77;"} Incididunt ut dolore
-            magna labore eiusmod. Dolor sit amet consectetur est adipisicing elit, sed do eiusmod.
+              %span{:style => "color: #e64b77;"} contact us and let's discuss your idea or project
+            to see how we can contribute.
         .one_half.last
           .contact-form
             %p
-              %input#name{:name => "your-name", :placeholder => "Name", :type => "text"}/
+              %input#name{:name => "name", :placeholder => "Name", :type => "text"}/
             %p
-              %input#contact-email{:name => "your-email", :placeholder => "Email", :type => "email"}/
+              %input#contact-email{:name => "email", :placeholder => "Email", :type => "email"}/
             %p
-              %input#subject{:name => "your-subject", :placeholder => "Subject", :type => "text"}/
+              %input#subject{:name => "subject", :placeholder => "Subject", :type => "text"}/
             %p
-              %textarea#message{:name => "your-message", :placeholder => "Message"}
+              %textarea#message{:name => "message", :placeholder => "Message"}
             %p
               %input{:onclick => "SendMail()", :type => "submit", :value => "SEND"}/
         .clear
       -# TODO Map or not?
       .full-width
-        %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4274.290564544589!2d-75.2952832049782!3d40.753669641460846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1444506658649", :style => "border:0", :width => "600"}
+        %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1293.5315359758654!2d-78.48246394076703!3d-0.18872859843334433!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sec!4v1524682645584", :style => "border:0", :width => "600"}
     .clear
 
 / Footer

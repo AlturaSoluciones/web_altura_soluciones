@@ -18,3 +18,13 @@
 .service-content {
     text-align: justify;
 }
+
+#team1_next {
+    right: 385px;
+    bottom: 15px;
+    background-color: #E54E79;
+}
+
+.member-position {
+    padding-bottom: 6px !important;
+}

@@ -3,6 +3,12 @@ class HomeController < ApplicationController
   end
 
   def send_email
-    MessageMailer.new_request(params).deliver_later
+    contact_info = {
+        name: params[:name],
+        email: params[:email],
+        subject: params[:subject],
+        message: params[:message]
+    }
+    MessageMailer.new_request(contact_info).deliver_later
   end
 end

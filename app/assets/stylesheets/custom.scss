@@ -1,0 +1,59 @@
+/*
+.big-title span {font-size: 0.6em; font-style: italic;}
+#testimonials .section-title-holder {background-color: rgb(255, 186, 66);}
+#slider1_text {color: #fff; position: absolute; left: -20px; top: 10px; font-size: 1em;}
+.service-content {text-align: justify;}
+#team1_next {right: 385px; bottom: 15px; background-color: #E54E79;}
+.member-position {padding-bottom: 6px !important;}
+*/
+
+html {
+	/* TOP MENU */
+
+	.menu-wrapper {    
+	    background-color: #279dbd;
+	}
+
+
+	/* HOME SECTION */
+
+	.top-logo {
+	    width: 200px;    
+	    padding-top: 4em;
+	}
+
+	h1.big-title {
+	    padding-top: 0.7em;
+	}
+
+
+	/* SERVICE SECTION */
+
+	#services {
+		background-color: #61dafb;
+		.section-title-holder {
+	    background-color: #279dbd;
+	    span {
+			    color: #54ceda;
+			}
+		}
+		.service-holder {
+			display: inline-flex;
+			.service-content img {
+				margin: 6px 15px 0 0;
+				width: 60px;
+			}
+		}
+	}
+
+	.section-num span {
+    margin-left: -42px;
+    font-size: 130px;
+	}
+
+	@media screen and (max-width: 1270px) {
+		.section-title-holder h2 {
+		    font-size: 78px;
+		}
+	}
+}

@@ -13,9 +13,9 @@
       %li
         %a{:href => "#services"} Stack
       %li
-        %a{:href => "#portfolio"} Portfolio
+        %a{:href => "#portfolio"} Work
       %li
-        %a{:href => "#about"} Motivation
+        %a{:href => "#about"} Why
       %li
         %a{:href => "#news"} Stories
       -#%li
@@ -28,11 +28,10 @@
 / Home
 #home.section.intro-page
   .block.content-1170.center-relative.center-text
-    = image_tag("demo-images/logo.png", class: "top-logo", alt: "Altura Soluciones")
+    = image_tag("altura_logo.svg", class: "top-logo", alt: "Altura Soluciones")
     %br
     %h1.big-title
-      Altura Soluciones
-      %span Aiming to new heights
+      Aiming to new heights
     %p.title-desc Creating incredible tech solutions with React.js and React Native
 
 / Stack
@@ -49,65 +48,64 @@
           var slider1_auto = "false";
           var slider1_hover = "true";
         .image-slider-wrapper.relative.service.slider1
-          %a#slider1_next.image_slider_next{:href => "#"}
-            %span#slider1_text More
+          %a#slider1_next.image_slider_next{:href => "#", :alt => "See more"}
           %ul#slider1.image-slider.slides
             %li
               .service-holder
-                = image_tag("react-icon.png", alt: "")
                 .service-content-holder
                   .service-title REACT
                   .service-content
+                    = image_tag("react.svg", alt: "React experts", align: "left")
                     Open-source JavaScript library used for building user interfaces specifically for single page applications. It allows us to create reusable UI components and large web applications which can change data, without reloading the page. React is fast, scalable, and simple.
                     %br/
               .service-holder
-                = image_tag("react-native-logo.png", alt: "")
                 .service-content-holder
                   .service-title REACT NATIVE
                   .service-content
+                    = image_tag("react-native.svg", alt: "React Native too", align: "left")
                     React Native lets us build native mobile apps using only JavaScript. It uses the same design as React, letting us to compose a rich mobile UI from declarative components. Fast development cycle reloading changes on real time without need for recompiling.
                     %br/
               .service-holder
-                = image_tag("redux-logo.png", alt: "")
                 .service-content-holder
                   .service-title REDUX
                   .service-content
+                    = image_tag("redux.svg", alt: "", align: "left")
                     Redux is a predictable state container for JavaScript apps. It helps us manage apps data and respond to user actions consistently, run in different environments (client, server, and native), and are easy to test.
                     %br/
               .service-holder
-                = image_tag("jest-icon.png", alt: "")
                 .service-content-holder
                   .service-title JEST
                   .service-content
+                    = image_tag("jest.svg", alt: "", align: "left")
                     De facto unit testing framework for ReactJS projects. Provides and integrated experience with easy setup working out of the box with React. Simplifies testing allowing to analyze how state data change over time.
                     %br/
             %li
               .service-holder
-                = image_tag("rails-logo.png", alt: "")
                 .service-content-holder
                   .service-title RAILS
                   .service-content
-                    Fast, flexible and reliable framework to build MVC webapps and standard API backend solutions. Rails allow us to develop MVP (Minimum Viable Products) in a cost effective way fulfilling our clients needs in the shortest time possible.
+                    = image_tag("rails.svg", alt: "", align: "left")
+                    Fast, flexible and reliable framework to build MVC webapps and standard API backend solutions. Rails allow us to develop MVPs (Minimum Viable Products) in a cost effective way fulfilling our clients needs in the shortest time possible.
                     %br/
               .service-holder
-                = image_tag("devops-logo.png", alt: "")
                 .service-content-holder
-                  .service-title DEVOPS
+                  .service-title DevOps
                   .service-content
+                    = image_tag("devops.svg", alt: "", align: "left")
                     We use DevOps best practices to guarantee continuous software  and faster features delivery, faster resolution of problems, increase the productivity of our team, improve communication and collaboration and ensure the client engagement on the project.
                     %br/
               .service-holder
-                = image_tag("lean-logo.png", alt: "")
                 .service-content-holder
                   .service-title LEAN
                   .service-content
-                    "...leans means creating more value for customers with fewer resources." We understand customer values and focus our key processes to continuously increase it, satisfying it's needs and engaging the client as part of our development cycle.
+                    = image_tag("lean.svg", alt: "", align: "left")
+                    "...Lean means creating more value for customers with fewer resources." We understand customer values and focus our key processes to continuously increase it, satisfying it's needs and engaging the client as part of our development cycle.
                     %br/
               .service-holder
-                = image_tag("tdd-logo.png", alt: "")
                 .service-content-holder
                   .service-title TDD
                   .service-content
+                    = image_tag("tdd.svg", alt: "", align: "left")
                     We validate our code with Test Driven Development, focusing on smaller chunks of functionality which guarantees that the new implemented code passes all tests keeping the base code stable despite of changes and decreasing bugs introduced.
                     %br/
           .clear
@@ -119,7 +117,7 @@
     .section-title-holder.right
       .section-num
         %span 02
-      %h2.entry-title Portfolio
+      %h2.entry-title Work
     .section-content-holder.portfolio-holder.left
       #portfolio-grid.grid
         .grid-sizer
@@ -177,7 +175,7 @@
     .section-title-holder.left
       .section-num
         %span 03
-      %h2.entry-title MOTIVATION
+      %h2.entry-title WHY
     .section-content-holder.right
       .content-wrapper
         .content-title-holder
@@ -392,10 +390,4 @@
         %a{:href => "#"}
           %span.fa.fa-twitter
         %a{:href => "#"}
-          %span.fa.fa-behance
-        %a{:href => "#"}
-          %span.fa.fa-dribbble
-        %a{:href => "#"}
           %span.fa.fa-facebook
-        %a{:href => "#"}
-          %span.fa.fa-rss

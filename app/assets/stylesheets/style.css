@@ -51,7 +51,6 @@ body a:hover
 {
     max-width: 100%;
     max-height: 100%;
-    width: auto;
     height: auto;
 }
 
@@ -269,7 +268,7 @@ body a:hover
 
 .top-logo
 {
-    width: 160px !important;    
+    width: 160px;    
     padding-top: 150px;
 }
 
@@ -340,7 +339,7 @@ h1.big-title
 .service-holder img 
 {
     display: inline-block;
-    width: 50px !important;
+    width: 50px;
     vertical-align: top;
 }
 

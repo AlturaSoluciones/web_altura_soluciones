@@ -39,13 +39,14 @@ set :ssh_options, {
 
 namespace :deploy do
 
+  after :publishing, :restart
+
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
       within release_path do
-        # need to change to /etc/init.d/blablabla
         execute :sudo, 'service as_site_staging stop', raise_on_non_zero_exit: false
-        execute :sudo, 'service as_site_staging start', raise_on_non_zero_exit: false
+        execute :sudo, 'service as_site_staging start'
       end
     end
   end

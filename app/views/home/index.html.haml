@@ -13,7 +13,7 @@
       %li
         %a{:href => "#services"} Stack
       %li
-        %a{:href => "#portfolio"} Work
+        -#%a{:href => "#portfolio"} Work
       %li
         %a{:href => "#about"} Why
       %li
@@ -112,69 +112,69 @@
     .clear
 
   / Portfolio
-#portfolio.section
-  .block.content-1170.center-relative
-    .section-title-holder.right
-      .section-num
-        %span 02
-      %h2.entry-title Work
-    .section-content-holder.portfolio-holder.left
-      #portfolio-grid.grid
-        .grid-sizer
-        .grid-item.element-item.p_one
-          -# TODO add pages for single portfolio items
-          %a{:href => "single-portfolio.html"}
-            = image_tag("demo-images/portfolio_item_01.jpg", alt: "")
-            .portfolio-text-holder
-              .portfolio-text-wrapper
-                %p.portfolio-type
-                  = image_tag("icon_post.svg", alt: "")
-                %p.portfolio-text PSD MOCKUP
-                %p.portfolio-sec-text Smart Watch
-        .grid-item.element-item.p_one_half
-          -# TODO add pages for single portfolio items
-          %a{:href => "single-portfolio2.html"}
-            = image_tag("demo-images/portfolio_item_02.jpg", alt: "")
-            .portfolio-text-holder
-              .portfolio-text-wrapper
-                %p.portfolio-type
-                  = image_tag("icon_post.svg", alt: "")
-                %p.portfolio-text PSD MOCKUP
-                %p.portfolio-sec-text Smart Watch
-        .grid-item.element-item.p_one_half
-          -# TODO add pages for single portfolio images
-          %a{"data-rel" => "prettyPhoto[gallery1]", :href => "demo-images/portfolio_item_08.jpg"}
-            = image_tag("demo-images/portfolio_item_08.jpg", alt: "")
-            .portfolio-text-holder
-              .portfolio-text-wrapper
-                %p.portfolio-type
-                  = image_tag("icon_post.svg", alt: "")
-                %p.portfolio-text PSD MOCKUP
-                %p.portfolio-sec-text Smart Watch
-        .grid-item.element-item.p_one
-          -# TODO add pages for single portfolio images
-          %a{"data-rel" => "prettyPhoto[gallery1]", :href => "demo-images/portfolio_item_05.jpg"}
-            = image_tag("demo-images/portfolio_item_05.jpg", alt: "")
-            .portfolio-text-holder
-              .portfolio-text-wrapper
-                %p.portfolio-type
-                  = image_tag("icon_post.svg", alt: "")
-                %p.portfolio-text PSD MOCKUP
-                %p.portfolio-sec-text Smart Watch
-      .clear
-      -# TODO implement functionality to load more items of the portfolio
-      -#.block.portfolio-load-more-holder
-        -#%a.more-posts{:target => "_self"} LOAD MORE
-        -#= image_tag("icon_infinity.svg", alt: "")
-    .clear
-  .clear
+-##portfolio.section
+-#  .block.content-1170.center-relative
+-#    .section-title-holder.right
+-#      .section-num
+-#        %span 02
+-#      %h2.entry-title Work
+-#    .section-content-holder.portfolio-holder.left
+-#      #portfolio-grid.grid
+-#        .grid-sizer
+-#        .grid-item.element-item.p_one
+-#          -# TODO add pages for single portfolio items
+-#          %a{:href => "single-portfolio.html"}
+-#            = image_tag("demo-images/portfolio_item_01.jpg", alt: "")
+-#            .portfolio-text-holder
+-#              .portfolio-text-wrapper
+-#                %p.portfolio-type
+-#                  = image_tag("icon_post.svg", alt: "")
+-#                %p.portfolio-text PSD MOCKUP
+-#                %p.portfolio-sec-text Smart Watch
+-#        .grid-item.element-item.p_one_half
+-#          -# TODO add pages for single portfolio items
+-#          %a{:href => "single-portfolio2.html"}
+-#            = image_tag("demo-images/portfolio_item_02.jpg", alt: "")
+-#            .portfolio-text-holder
+-#              .portfolio-text-wrapper
+-#                %p.portfolio-type
+-#                  = image_tag("icon_post.svg", alt: "")
+-#                %p.portfolio-text PSD MOCKUP
+-#                %p.portfolio-sec-text Smart Watch
+-#        .grid-item.element-item.p_one_half
+-#          -# TODO add pages for single portfolio images
+-#          %a{"data-rel" => "prettyPhoto[gallery1]", :href => "demo-images/portfolio_item_08.jpg"}
+-#            = image_tag("demo-images/portfolio_item_08.jpg", alt: "")
+-#            .portfolio-text-holder
+-#              .portfolio-text-wrapper
+-#                %p.portfolio-type
+-#                  = image_tag("icon_post.svg", alt: "")
+-#                %p.portfolio-text PSD MOCKUP
+-#                %p.portfolio-sec-text Smart Watch
+-#        .grid-item.element-item.p_one
+-#          -# TODO add pages for single portfolio images
+-#          %a{"data-rel" => "prettyPhoto[gallery1]", :href => "demo-images/portfolio_item_05.jpg"}
+-#            = image_tag("demo-images/portfolio_item_05.jpg", alt: "")
+-#            .portfolio-text-holder
+-#              .portfolio-text-wrapper
+-#                %p.portfolio-type
+-#                  = image_tag("icon_post.svg", alt: "")
+-#                %p.portfolio-text PSD MOCKUP
+-#                %p.portfolio-sec-text Smart Watch
+-#      .clear
+-#      -# TODO implement functionality to load more items of the portfolio
+-#      -#.block.portfolio-load-more-holder
+-#        -#%a.more-posts{:target => "_self"} LOAD MORE
+-#        -#= image_tag("icon_infinity.svg", alt: "")
+-#    .clear
+-#  .clear
 
 / About
 #about.section
   .block.content-1170.center-relative
     .section-title-holder.left
       .section-num
-        %span 03
+        %span 02
       %h2.entry-title WHY
     .section-content-holder.right
       .content-wrapper
@@ -261,7 +261,7 @@
     .section-title-holder.right
       .section-num
         %span
-          04
+          03
       %h2.entry-title STORIES
     .section-content-holder.left
       .content-wrapper
@@ -347,7 +347,7 @@
       .section-num
         %span
           -# TODO Change back to 07 when adding the other sections
-          05
+          04
       %h2.entry-title Contact
     .section-content-holder.right
       .content-wrapper
@@ -385,9 +385,9 @@
     %ul
       %li.copyright-footer
         © 2018 All rights reserved
-        %a{:href => "https://www.alturasoluciones.com", :target => "_blank"} | Altura Soluciones
+        %a{href: "https://www.alturasoluciones.com", :target => "_blank"} | Altura Soluciones
       %li.social-footer
-        %a{:href => "#"}
+        %a{href: "https://twitter.com/AlturaSolucion", target: "_blank"}
           %span.fa.fa-twitter
-        %a{:href => "#"}
-          %span.fa.fa-facebook
+        %a{href: "https://medium.com/alturasoluciones", target: "_blank"}
+          %span.fa.fa-medium

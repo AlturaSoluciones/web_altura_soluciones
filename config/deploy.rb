@@ -45,8 +45,8 @@ namespace :deploy do
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
       within release_path do
-        execute :sudo, 'service as_site_staging stop', raise_on_non_zero_exit: false
-        execute :sudo, 'service as_site_staging start'
+        execute :sudo, "service as_site_#{fetch(:rails_env)} stop", raise_on_non_zero_exit: false
+        execute :sudo, "service as_site_#{fetch(:rails_env)} start"
       end
     end
   end

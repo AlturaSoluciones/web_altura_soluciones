@@ -56,7 +56,6 @@ html {
 	}
 
 	.image-slider-wrapper.service .image-slider li a.image_slider_next {
-		background: url("navigation_arrows_right.svg") center center / 70% 70% no-repeat transparent;
     width: 50px;
     height: 50px;
     z-index: 2;
@@ -65,19 +64,21 @@ html {
     right: 0;
     background-color: #666;
     border-radius: 10px;
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	}
-
-	@media screen and (max-width: 1270px) {
-		.section-title-holder h2 {
-		    font-size: 78px;
-		}
+	.image-slider-wrapper.service .image-slider li a.image_slider_next span {
+		background: url(navigation_arrows_right.svg) center -1px/90% 200% no-repeat transparent;
+		display: block;
+    width: 20px;
+    height: 20px;
 	}
+}
 
-    .member-position {
-      padding-bottom: 5px !important;
-    }
-
-    .image-slider-wrapper.team .image_slider_next {
-      background-color: #E44D78;
-    }
+@media screen and (max-width: 1270px) {
+	.section-title-holder h2 {
+	    font-size: 78px;
+	}
 }

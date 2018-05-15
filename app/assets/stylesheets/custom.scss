@@ -51,6 +51,22 @@ html {
     font-size: 130px;
 	}
 
+	.image-slider-wrapper.service .image-slider li {
+    position: relative;
+	}
+
+	.image-slider-wrapper.service .image-slider li a.image_slider_next {
+		background: url("navigation_arrows_right.svg") center center / 70% 70% no-repeat transparent;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background-color: #666;
+    border-radius: 10px;
+	}
+
 	@media screen and (max-width: 1270px) {
 		.section-title-holder h2 {
 		    font-size: 78px;

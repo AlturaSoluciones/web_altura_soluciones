@@ -13,7 +13,7 @@
       %li
         %a{:href => "#services"} Stack
       %li
-        -#%a{:href => "#portfolio"} Work
+        %a{:href => "#portfolio"} Work
       %li
         %a{:href => "#about"} Why
       %li
@@ -47,11 +47,12 @@
           var slider1_speed = "500";
           var slider1_auto = "false";
           var slider1_hover = "true";
+
         .image-slider-wrapper.relative.service.slider1
           %a#slider1_next.image_slider_next{:href => "#", :alt => "See more"}
           %ul#slider1.image-slider.slides
-            %li
-              %a.image_slider_next{:href => "#", :alt => "See more"}
+            %li.sticky-container
+              %a.image_slider_next.sticky{:href => "#", :alt => "See more"}
                 %span
               .service-holder
                 .service-content-holder
@@ -115,63 +116,83 @@
           .clear
     .clear
 
-  / Portfolio
--##portfolio.section
--#  .block.content-1170.center-relative
--#    .section-title-holder.right
--#      .section-num
--#        %span 02
--#      %h2.entry-title Work
--#    .section-content-holder.portfolio-holder.left
--#      #portfolio-grid.grid
--#        .grid-sizer
--#        .grid-item.element-item.p_one
--#          -# TODO add pages for single portfolio items
--#          %a{:href => "single-portfolio.html"}
--#            = image_tag("demo-images/portfolio_item_01.jpg", alt: "")
--#            .portfolio-text-holder
--#              .portfolio-text-wrapper
--#                %p.portfolio-type
--#                  = image_tag("icon_post.svg", alt: "")
--#                %p.portfolio-text PSD MOCKUP
--#                %p.portfolio-sec-text Smart Watch
--#        .grid-item.element-item.p_one_half
--#          -# TODO add pages for single portfolio items
--#          %a{:href => "single-portfolio2.html"}
--#            = image_tag("demo-images/portfolio_item_02.jpg", alt: "")
--#            .portfolio-text-holder
--#              .portfolio-text-wrapper
--#                %p.portfolio-type
--#                  = image_tag("icon_post.svg", alt: "")
--#                %p.portfolio-text PSD MOCKUP
--#                %p.portfolio-sec-text Smart Watch
--#        .grid-item.element-item.p_one_half
--#          -# TODO add pages for single portfolio images
--#          %a{"data-rel" => "prettyPhoto[gallery1]", :href => "demo-images/portfolio_item_08.jpg"}
--#            = image_tag("demo-images/portfolio_item_08.jpg", alt: "")
--#            .portfolio-text-holder
--#              .portfolio-text-wrapper
--#                %p.portfolio-type
--#                  = image_tag("icon_post.svg", alt: "")
--#                %p.portfolio-text PSD MOCKUP
--#                %p.portfolio-sec-text Smart Watch
--#        .grid-item.element-item.p_one
--#          -# TODO add pages for single portfolio images
--#          %a{"data-rel" => "prettyPhoto[gallery1]", :href => "demo-images/portfolio_item_05.jpg"}
--#            = image_tag("demo-images/portfolio_item_05.jpg", alt: "")
--#            .portfolio-text-holder
--#              .portfolio-text-wrapper
--#                %p.portfolio-type
--#                  = image_tag("icon_post.svg", alt: "")
--#                %p.portfolio-text PSD MOCKUP
--#                %p.portfolio-sec-text Smart Watch
--#      .clear
--#      -# TODO implement functionality to load more items of the portfolio
--#      -#.block.portfolio-load-more-holder
--#        -#%a.more-posts{:target => "_self"} LOAD MORE
--#        -#= image_tag("icon_infinity.svg", alt: "")
--#    .clear
--#  .clear
+/ Portfolio
+#portfolio.section
+  .block.content-1170.center-relative
+    .section-title-holder.right
+      .section-num
+        %span 02
+      %h2.entry-title Work
+    .section-content-holder.portfolio-holder.left
+      #portfolio-grid.grid
+        .grid-sizer
+        / .grid-item.element-item.p_one
+        /   -# TODO add pages for single portfolio items
+        /   %a{:href => "single-portfolio.html"}
+        /     = image_tag("demo-images/portfolio_item_01.jpg", alt: "")
+        /     .portfolio-text-holder
+        /       .portfolio-text-wrapper
+        /         %p.portfolio-type
+        /           = image_tag("icon_post.svg", alt: "")
+        /         %p.portfolio-text PSD MOCKUP
+        /         %p.portfolio-sec-text Smart Watch
+        .grid-item.element-item.p_one_half
+          %a
+            = image_tag("clients/logo_client_1.png", alt: "")
+            .portfolio-text-holder
+              .portfolio-text-wrapper
+                / %p.portfolio-type
+                /   = image_tag("icon_post.svg", alt: "")
+                %p.portfolio-text RingeRx
+                %p.portfolio-sec-text Smart Watch
+        .grid-item.element-item.p_one_half
+          %a
+            = image_tag("clients/logo_client_2.png", alt: "")
+            .portfolio-text-holder
+              .portfolio-text-wrapper
+                / %p.portfolio-type
+                /   = image_tag("icon_post.svg", alt: "")
+                %p.portfolio-text PSD MOCKUP
+                %p.portfolio-sec-text Smart Watch
+
+        .grid-item.element-item.p_one_half
+          %a
+            = image_tag("clients/logo_client_3.png", alt: "")
+            .portfolio-text-holder
+              .portfolio-text-wrapper
+                / %p.portfolio-type
+                /   = image_tag("icon_post.svg", alt: "")
+                %p.portfolio-text PSD MOCKUP
+                %p.portfolio-sec-text Smart Watch
+
+        .grid-item.element-item.p_one_half
+          %a
+            = image_tag("clients/logo_client_4.png", alt: "")
+            .portfolio-text-holder
+              .portfolio-text-wrapper
+                / %p.portfolio-type
+                /   = image_tag("icon_post.svg", alt: "")
+                %p.portfolio-text PSD MOCKUP
+                %p.portfolio-sec-text Smart Watch
+        
+
+        / .grid-item.element-item.p_one
+        /   -# TODO add pages for single portfolio images
+        /   %a{"data-rel" => "prettyPhoto[gallery1]", :href => "demo-images/portfolio_item_05.jpg"}
+        /     = image_tag("demo-images/portfolio_item_05.jpg", alt: "")
+        /     .portfolio-text-holder
+        /       .portfolio-text-wrapper
+        /         %p.portfolio-type
+        /           = image_tag("icon_post.svg", alt: "")
+        /         %p.portfolio-text PSD MOCKUP
+        /         %p.portfolio-sec-text Smart Watch
+      .clear
+      -# TODO implement functionality to load more items of the portfolio
+      -#.block.portfolio-load-more-holder
+        -#%a.more-posts{:target => "_self"} LOAD MORE
+        -#= image_tag("icon_infinity.svg", alt: "")
+    .clear
+  .clear
 
 / About
 #about.section
@@ -297,20 +318,21 @@
     .clear
   .block.content-1170.center-relative
     .extra-content-left
-      %h2.entry-title
-        TESTIMONIALS
+      
       :javascript
         var text1_speed = "500";
         var text1_auto = "false";
         var text1_hover = "true";
       .text1.testimonial-slider-holder.slider-holder
+        %h2.entry-title
+          TESTIMONIALS
         .caroufredsel_wrapper
           %ul#text1.slides.testimonial
             %li
               .testimonial-content
                 %p.testimonial-text
                   Hiring Altura Soluciones was one of the best decisions that I made when starting my company. They help me to build a high quality
-                  product according to the highest development standards. Every great company should have partners as Altura Solucioens that help them to
+                  product according to the highest development standards. Every great company should have partners as Altura Soluciones that help them to
                   achieve success.
                 %p.testimonial-author
                   DOUG PARENT - RingRx.com
@@ -356,7 +378,7 @@
       .content-wrapper
         .one_half
           %p
-            We are passionate about collaborating on new and exciting project using modern techologies to guarantee a high quality product and to
+            We are passionate about collaborating on new and exciting project using modern technologies to guarantee a high quality product and to
             provide value to our customers.
           %br/
           %p

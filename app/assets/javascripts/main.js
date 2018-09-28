@@ -43,6 +43,14 @@ jQuery(document).ready(function () {
         });
     });
 
+    var parent = jQuery('.sticky-container');
+    var elem = parent.find('.sticky');
+    jQuery(window).scroll(function() {
+    if ((jQuery(window).scrollTop() + jQuery(elem).height()) < (jQuery(parent).offset().top + jQuery(parent).height())) {
+      jQuery(elem).css('top', jQuery(window).scrollTop());
+    }
+    }).trigger('scroll');
+
 });
 
 

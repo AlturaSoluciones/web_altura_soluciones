@@ -462,6 +462,15 @@ h1.big-title
     max-width: none;    
 }
 
+.grid-item .clientbox 
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    max-width: none;    
+}
+
 .grid-sizer, .grid-item 
 {
     width: 400px;
@@ -480,7 +489,7 @@ h1.big-title
 .portfolio-text-holder
 {
     position: absolute;
-    top: 30px;
+    top: 0;
     left: 30px;
     bottom: 30px;
     right: 30px;
@@ -519,15 +528,14 @@ h1.big-title
     font-weight: 700;
     font-size: 20px;
     line-height: 18px;
-    letter-spacing: 4px;
     margin-bottom: 10px;
 }
 
 .portfolio-sec-text
 {
     font-family: 'Montserrat', sans-serif;    
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 100%;
     color: #8e8da9;
 }

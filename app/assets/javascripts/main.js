@@ -36,7 +36,7 @@ jQuery(document).ready(function () {
         });
 
         //Fix for portfolio hover text fade in/out
-        jQuery('.grid-item a').hover(function () {
+        jQuery('.grid-item .clientbox').hover(function () {
             jQuery(this).find('.portfolio-text-holder').fadeIn('fast');
         }, function () {
             jQuery(this).find('.portfolio-text-holder').fadeOut('fast');

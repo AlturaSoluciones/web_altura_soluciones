@@ -52,8 +52,8 @@
           %a#slider1_next.image_slider_next{:href => "#", :alt => "See more"}
           %ul#slider1.image-slider.slides
             %li.sticky-container
-              %a.image_slider_next.sticky{:href => "#", :alt => "See more"}
-                %span
+              / %a.image_slider_next.sticky{:href => "#", :alt => "See more"}
+              /   %span
               .service-holder
                 .service-content-holder
                   .service-title REACT
@@ -83,8 +83,8 @@
                     De facto unit testing framework for ReactJS projects. Provides and integrated experience with easy setup working out of the box with React. Simplifies testing allowing to analyze how state data change over time.
                     %br/
             %li
-              %a.image_slider_next{:href => "#", :alt => "See more"}
-                %span
+              / %a.image_slider_next{:href => "#", :alt => "See more"}
+              /   %span
               .service-holder
                 .service-content-holder
                   .service-title RAILS
@@ -126,16 +126,6 @@
     .section-content-holder.portfolio-holder.left
       #portfolio-grid.grid
         .grid-sizer
-        / .grid-item.element-item.p_one
-        /   -# TODO add pages for single portfolio items
-        /   %a{:href => "single-portfolio.html"}
-        /     = image_tag("demo-images/portfolio_item_01.jpg", alt: "")
-        /     .portfolio-text-holder
-        /       .portfolio-text-wrapper
-        /         %p.portfolio-type
-        /           = image_tag("icon_post.svg", alt: "")
-        /         %p.portfolio-text PSD MOCKUP
-        /         %p.portfolio-sec-text Smart Watch
         .grid-item.element-item.p_one_half
           .clientbox
             = image_tag("clients/logo_client_1.png", alt: "")

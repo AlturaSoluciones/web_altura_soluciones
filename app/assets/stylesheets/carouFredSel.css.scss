@@ -32,4 +32,5 @@ li.fw-slide {margin: 0 10px; transition: opacity .2s linear;}
 li.fw-slide img  {width: auto; height: auto; max-width: 180px; display: block; margin-left: auto; margin-right: auto;}
 .fw-slide-text {color: #fff; font-size: 18px;}
 .image-slider-wrapper.team .image_slider_next {background-image: asset-url("navigation_arrows_right.svg"); width: 50px; height: 50px; z-index: 2; position: absolute; right: 300px; bottom: 30px;}
+.image-slider-wrapper.team .image_slider_next_blue {background-image: asset-url("nav_arrw_rgt_blue.svg"); width: 50px; height: 50px; z-index: 2; position: absolute; right: 300px; bottom: 30px;}
 .carousel_fw_next {background-image: asset-url("navigation_arrows_right.svg"); width: 50px; height: 50px; z-index: 2; display: none !important; margin-left: auto;  margin-right: auto; margin-top: 50px;}

@@ -227,7 +227,7 @@
     .section-title-holder.left
       .section-num
         %span 03
-      %h2.entry-title WHY
+      %h2.entry-title{:style => "font-size: 70px;"} WHY
     .section-content-holder.right
       .content-wrapper
         / .content-title-holder
@@ -253,7 +253,7 @@
           var aboutImage_auto = "false";
           var aboutImage_hover = "true";
         .image-slider-wrapper.relative.img.aboutImage
-          -#%a#aboutImage_next.image_slider_next{:href => "#"}
+          %a#aboutImage_next.image_slider_next{:href => "#", :style => "right: 20px;"}
           .caroufredsel_wrapper
             %ul#aboutImage.image-slider.slides
               %li
@@ -268,7 +268,7 @@
           var team1_auto = "false";
           var team1_hover = "true";
         .image-slider-wrapper.relative.team.team1
-          %a#team1_next.image_slider_next{:href => "#"}
+          %a#team1_next.image_slider_next_blue{:href => "#", :style => "right: 20px;"}
           .caroufredsel_wrapper
             %ul#team1.image-slider.slides
               %li
@@ -276,7 +276,7 @@
                   %h4.member-name David Meza
                   %p.member-position CEO
                   .member-content
-                    Creative thinker, expert in technology and business development. I help startups to better validate hypothesis, build their business model and strategy. Software consultant and remote agile development specialist.
+                    Creative thinker, technology and business development expert. I help startups to validate hypotheses, build business models and strategy. Software consultant.
                     %br/
                 .member-image-holder
                   = image_tag("profiles/david_meza.png", alt: "David Meza")
@@ -297,7 +297,7 @@
                   %p.member-position
                     Fullstack & DevOps
                   .member-content
-                    Fullstack web and mobile developer with 9+ years of experience. I love React, VueJS, and Rails. DevOps engineer with experience in Continuos Deployment and Continuos Integration.
+                    Fullstack web and mobile developer, 9+ years of experience. I love React, VueJS, and Rails. DevOps engineer experienced in Continuos Deployment and Continuos Integration.
                     %br/
                 .member-image-holder
                   = image_tag("profiles/alberto_aragon.png", alt: "Alberto Aragón")
@@ -307,8 +307,8 @@
                   %h4.member-name Milber Champutiz
                   %p.member-position Senior Fullstack Developer
                   .member-content
-                    With more than 15 years in the world of software development. I like to program, regardless of the language, and the agile development
-                    of software. I love sports,  soccer, cycling, F1, and hiking. que vuelta mariconson
+                    With more than 15 years in the world of software development. I like to program-regardless of the language-and agile software development.
+                    I love sports, soccer, cycling, F1, and hiking.
                     %br/
                 .member-image-holder
                   = image_tag("profiles/milber.png", alt: "Milber Champutiz")

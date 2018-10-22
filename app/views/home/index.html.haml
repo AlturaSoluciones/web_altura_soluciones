@@ -20,10 +20,11 @@
         %a{:href => "#news"} Stories
       -#%li
         %a{:href => "#video"} Video
-      -#%li
-        %a{:href => "#skills"} Skills
+      %li
+        %a{:href => "#skills"} Expertise
       %li
         %a{:href => "#contact"} Contact
+      
 
 / Home
 #home.section.intro-page
@@ -422,6 +423,32 @@
 -# TODO Process Section
 -# TODO Expertise Section
 
+/ Expertise
+
+#skills.section
+  .block.content-1170.center-relative
+    .section-title-holder.right
+      .section-num
+        %span 05
+      %h2.entry-title EXPERTISE
+    .section-content-holder.left
+      .content-wrapper
+        %p Fusce suscipit, orci eget lobortis sodales, velit nunc tristique metus, in tristique odio ante id sem. Etiam in quam et sapien bibendum mollis. Morbi eget velit eros, quis imperdiet arcusere perdan. Nunc lorem justo, pellentesque ac egestas quis.
+        %br/
+        .stats
+          .datah{:style => "background-color:#32DB8A;"}
+            %p.lead 10
+            %p Years
+          .datah{:style => "background-color:#FFBB42;"}
+            %p.lead 35
+            %p Articles
+          .datah{:style => "background-color:#E74C78;"}
+            %p.lead 4
+            %p Countries
+          .datah{:style => "background-color:#4C9EE7;"}
+            %p.lead 10
+            %p Projects
+    .clear
 
 / Contact
 #contact.section
@@ -430,7 +457,7 @@
       .section-num
         %span
           -# TODO Change back to 07 when adding the other sections
-          05
+          06
       %h2.entry-title Contact
     .section-content-holder.right
       .content-wrapper
@@ -460,6 +487,10 @@
       .full-width
         %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1293.5315359758654!2d-78.48246394076703!3d-0.18872859843334433!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sec!4v1524682645584", :style => "border:0", :width => "600"}
     .clear
+
+
+
+
 
 / Footer
 %footer

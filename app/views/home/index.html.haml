@@ -456,13 +456,13 @@
         .one_half.last
           .contact-form
             %p
-              %input#name{:name => "name", :placeholder => "Name", :type => "text"}/
+              %input#name{:name => "name", :placeholder => "Name *", :type => "text"}/
             %p
-              %input#contact-email{:name => "email", :placeholder => "Email", :type => "email"}/
+              %input#contact-email{:name => "email", :placeholder => "Email *", :type => "email"}/
             %p
               %input#subject{:name => "subject", :placeholder => "Subject", :type => "text"}/
             %p
-              %textarea#message{:name => "message", :placeholder => "Message"}
+              %textarea#message{:name => "message", :placeholder => "Message *"}
             %p
               %input{:onclick => "SendMail()", :type => "submit", :value => "SEND"}/
         .clear

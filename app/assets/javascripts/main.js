@@ -343,9 +343,7 @@ function isValidEmailAddress(emailAddress) {
 
 var SendMail = function () {
 
-    var emailVal = jQuery('#contact-email').val();
-
-    if (isValidEmailAddress(emailVal)) {
+    if (fieldsAreValid()) {
         var params = {
             'action': 'SendMessage',
             'name': jQuery('#name').val(),
@@ -358,6 +356,8 @@ var SendMail = function () {
             url: "/send_email",
             data: params,
             success: function (response) {
+                clearFormFields();
+                alert('Thank you! Your message was sent successfully.');
                 if (response) {
                     var responseObj = jQuery.parseJSON(response);
                     if (responseObj.ResponseData)
@@ -396,8 +396,36 @@ var SendMail = function () {
         });
     } else
     {
-        alert('Your email is not in valid format');
+        alert(errorMessage());
     }
 
 
+};
+
+var clearFormFields = function() {
+    jQuery('#name').val('');
+    jQuery('#contact-email').val('');
+    jQuery('#subject').val('');
+    jQuery('#message').val('');
+};
+
+var fieldsAreValid = function() {
+    return (isValidEmailAddress(jQuery('#contact-email').val())
+        && jQuery('#name').val().trim() !== ''
+        && jQuery('#message').val() !== '')
+};
+
+var errorMessage = function() {
+    var message = '';
+
+    if(jQuery('#name').val().trim() === ''){
+        message += 'You need a valid name.\n';
+    }
+    if(!isValidEmailAddress(jQuery('#contact-email').val())) {
+        message += 'You need a valid email.\n';
+    }
+    if(jQuery('#message').val().trim() === ''){
+        message += 'You need a valid message.'
+    }
+    return message;
 };
